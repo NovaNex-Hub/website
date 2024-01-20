@@ -1,9 +1,9 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
-export default function Home() {
+export default function Docs() {
   return (
     <MaxWidthWrapper>
-      <div className="font-semibold m-6 text-2xl">Rentable NFT Market place</div>
+      <div className="font-semibold m-6 text-2xl">Docs</div>
     </MaxWidthWrapper>
   );
 }
