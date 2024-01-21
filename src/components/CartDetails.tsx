@@ -12,6 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { CartTable } from "./CartTable";
 
 export function CartDetails() {
   return (
@@ -28,7 +29,8 @@ export function CartDetails() {
             NFT&apos;s in your Cart
           </SheetDescription>
         </SheetHeader>
-        <SheetFooter>
+        <CartTable/>
+        <SheetFooter className="mt-2">
           <SheetClose asChild>
             <Button type="submit">Buy</Button>
           </SheetClose>
