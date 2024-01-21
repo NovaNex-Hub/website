@@ -42,7 +42,7 @@ const NavBar = () => {
 
         <div className="flex gap-6 font-medium text-xl">
           <CartDetails/>
-          <Button variant="ghost" size="icon">
+          <Button onClick={()=>{router.push("/profile")}} variant="ghost" size="icon">
             <Avatar>
               <AvatarImage src="" />
               <AvatarFallback>
