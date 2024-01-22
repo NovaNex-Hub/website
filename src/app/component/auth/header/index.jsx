@@ -1,15 +1,15 @@
-import React from 'react';
-import { Inter, Poppins } from 'next/font/google';
-import cls from 'classname';
+import React from "react";
+import { Inter, Poppins } from "next/font/google";
+import cls from "classname";
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['600'] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["600"] });
 const AuthHeader = ({ title, description }) => {
   return (
     <aside className="text-center">
       <h3
         className={cls(
-          'my-3 text-4xl font-bold text-[#009947]',
-          poppins.className
+          "my-3 text-4xl font-bold text-[#009947]",
+          poppins.className,
         )}
       >
         NOVANEX HUB

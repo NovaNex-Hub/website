@@ -1,5 +1,5 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 
 const NovanexInput = ({ title, placeholder, type, name }) => {
   const [viewType, setViewType] = useState(false);
@@ -13,13 +13,13 @@ const NovanexInput = ({ title, placeholder, type, name }) => {
       <p className="text-[#4C4C4C]">{title}</p>
       <aside className="relative">
         <input
-          type={viewType ? 'text' : type}
+          type={viewType ? "text" : type}
           name={name}
           id={name}
           placeholder={placeholder}
           className="border-gray-200 border w-full py-3 px-2 my-2 rounded-md"
         />
-        {type === 'password' && (
+        {type === "password" && (
           <p
             onClick={handleViewPassword}
             className="absolute top-1/2 right-4 w-5 h-5 -translate-y-1/2 text-gray-400 cursor-pointer"
