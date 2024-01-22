@@ -25,11 +25,9 @@ export function CartDetails() {
       <SheetContent>
         <SheetHeader>
           <SheetTitle>Cart</SheetTitle>
-          <SheetDescription>
-            NFT&apos;s in your Cart
-          </SheetDescription>
+          <SheetDescription>NFT&apos;s in your Cart</SheetDescription>
         </SheetHeader>
-        <CartTable/>
+        <CartTable />
         <SheetFooter className="mt-2">
           <SheetClose asChild>
             <Button type="submit">Buy</Button>
