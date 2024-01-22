@@ -57,7 +57,11 @@ const NavBar = () => {
             </Avatar>
           </Button>
 
-          <Button variant="secondary" size="lg">
+          <Button 
+          onClick={() => {
+            router.push("/login");
+          }}
+          variant="secondary" size="lg">
             Login
           </Button>
         </div>
