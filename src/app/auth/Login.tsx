@@ -1,9 +1,9 @@
 import Link from "next/link";
-import AuthHeader from "../../component/auth/header";
-import NovanexInput from "../../component/input";
-import Button from "../../component/button";
+import AuthHeader from "../component/auth/header";
+import NovanexInput from "../component/input";
+import Button from "../component/button";
 
-const Login = () => {
+const Login: React.FC = () => {
   return (
     <main className="flex h-screen p-5">
       <section className="border px-4 md:px-8 py-10 rounded-lg bg-white w-full md:w-[500px]">
@@ -16,11 +16,11 @@ const Login = () => {
             name={"email"}
           />
 
-          <Button href={"/dashboard"} css={"my-3"}>
+          {/* <Button href={"/dashboard"}  clasName="my-3">
             Sign in
-          </Button>
+          </Button> */}
           <p className="text-center">
-            Or ? <Link className="text-novanex">Connect Wallet</Link>
+            Or ? <Link href={"/"} className="text-novanex">Connect Wallet</Link>
           </p>
         </form>
       </section>
