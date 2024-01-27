@@ -56,10 +56,11 @@ const NavBar = () => {
               </AvatarFallback>
             </Avatar>
           </Button>
-
+          
           <Button variant="secondary" size="lg">
             Login
           </Button>
+          
         </div>
       </div>
     </div>
