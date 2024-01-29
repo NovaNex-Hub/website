@@ -22,7 +22,7 @@ const Login: React.FC = () => {
           <p className="text-center">
             Or ? <Link href={"/"} className="text-novanex">Connect Wallet</Link>
           </p>
-        </form>
+        </form> 
       </section>
     </main>
   );

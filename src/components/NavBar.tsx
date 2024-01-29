@@ -16,7 +16,7 @@ const NavBar = () => {
         <div className="flex items-center h-full">
           <Link className="font-bold text-3xl mr-10" href="/">
             NovaNex
-          </Link>
+          </Link> 
           <div className="h-14">
             <Separator orientation="vertical" />
           </div>

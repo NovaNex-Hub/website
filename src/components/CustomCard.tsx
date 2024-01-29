@@ -26,7 +26,7 @@ export const CustomCard = ({
       <CardFooter className="flex flex-col">
         <div className="flex justify-between w-full">
           <span>Name</span>
-          <Button variant="ghost" size="icon">
+          <Button variant="ghost" size="icon"> 
             <ShoppingCart />
           </Button>
         </div>
