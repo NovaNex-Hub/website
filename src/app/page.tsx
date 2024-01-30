@@ -14,9 +14,6 @@ export default function Home() {
         <Image src="/nft8.jpg" width={500} height={400} alt="nft8" />
 
         <Image src="/nft9.jpg" width={500} height={400} alt="nft9" />
-
-       
-
       </div>
       <div className="bg-black grid-cols-4 gap-4 md:flex md:flex-row mt-20 mx-8">
         <Image src="/nft10.jpg" width={500} height={400} alt="nft10" />
@@ -24,8 +21,6 @@ export default function Home() {
         <Image src="/nft11.jpg" width={500} height={400} alt="nft11" />
 
         <Image src="/nft12.jpg" width={500} height={400} alt="nft12" />
-
-       
       </div>
       <div
         className="px-[30px] md:px-[100px] py-[60px]
