@@ -1,6 +1,5 @@
 "use client";
 import { AutoPlayCards } from "@/components/AutoPlayCards";
-// import { AutoPlayCards } from "@/components/AutoPlayCards";
 import { useState, useEffect } from "react";
 import { CustomCard } from "@/components/CustomCard";
 import { StaticImageData } from "next/image";
@@ -36,7 +35,6 @@ export default function Marketplace() {
   }, []);
   return (
     <MaxWidthWrapper>
-      {/* <div className="font-semibold m-6 text-2xl">Marketplace</div> */}
       <div className="font-semibold m-6 text-xl">Top Trending</div>
       <AutoPlayCards />
       <div className="font-semibold m-6 text-xl">All NFTs</div>
@@ -48,7 +46,6 @@ export default function Marketplace() {
         ))}
       </div>
       <div className="font-semibold m-6 text-xl">Top Sales</div>
-      {/* <AutoPlayCards2 /> */}
       <div className="font-semibold m-6 text-xl">Best Offers</div>
       <div className="grid grid-cols-4 gap-4">
         {images.map((path, index) => (

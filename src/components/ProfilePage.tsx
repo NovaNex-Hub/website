@@ -1,4 +1,3 @@
-// import { CustomCard } from "./CustomCard";
 import nft6 from "../../public/nft6.jpeg";
 
 export const ProfilePage = () => {

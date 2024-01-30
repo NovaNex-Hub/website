@@ -3,7 +3,6 @@ import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { StaticImageData } from "next/image";
 import { useState, useEffect } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -12,7 +11,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { CustomCard } from "./CustomCard";
-// import nft1 from "../../public/nft6.jpeg";
 import nft2 from "../../public/nft7.jpeg";
 import nft3 from "../../public/nft8.jpeg";
 import nft4 from "../../public/nft9.jpeg";
