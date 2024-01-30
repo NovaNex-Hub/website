@@ -20,7 +20,19 @@ import nft11 from "../../../public/nft11.jpeg";
 export default function Marketplace() {
   const [images, setImages] = useState<StaticImageData[]>([]);
   useEffect(() => {
-    setImages([nft1, nft2, nft3, nft4, nft5, nft6,nft7, nft8, nft9, nft10, nft11]);
+    setImages([
+      nft1,
+      nft2,
+      nft3,
+      nft4,
+      nft5,
+      nft6,
+      nft7,
+      nft8,
+      nft9,
+      nft10,
+      nft11,
+    ]);
   }, []);
   return (
     <MaxWidthWrapper>
@@ -46,5 +58,5 @@ export default function Marketplace() {
         ))}
       </div>
     </MaxWidthWrapper>
-  ); 
+  );
 }

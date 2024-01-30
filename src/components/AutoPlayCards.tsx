@@ -40,7 +40,7 @@ export function AutoPlayCards() {
         {images.map((path, index) => (
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
             <div className="p-1">
-              <CustomCard path={path} /> 
+              <CustomCard path={path} />
             </div>
           </CarouselItem>
         ))}

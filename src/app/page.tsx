@@ -6,6 +6,6 @@ export default function Home() {
       <div className="font-semibold m-6 text-2xl">
         Rentable NFT Market place
       </div>
-    </MaxWidthWrapper> 
+    </MaxWidthWrapper>
   );
 }
