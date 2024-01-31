@@ -7,5 +7,5 @@ export default function Profile() {
       <div className="font-semibold m-6 text-2xl">Your Profile</div>
       <ProfilePage />
     </MaxWidthWrapper>
-  ); 
+  );
 }

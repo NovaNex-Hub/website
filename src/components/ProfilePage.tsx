@@ -1,8 +1,6 @@
-// import { CustomCard } from "./CustomCard";
-import nft6 from "../../public/nft6.jpeg"
+import nft6 from "../../public/nft6.jpeg";
 
 export const ProfilePage = () => {
-
   const srcValue: string = nft6.src as string;
 
   return (
@@ -19,7 +17,6 @@ export const ProfilePage = () => {
               </div>
           </div>
       </div>
-
     </>
   );
 };
