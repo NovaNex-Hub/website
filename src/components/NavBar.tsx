@@ -7,6 +7,7 @@ import { ShoppingCart, UserRound } from "lucide-react";
 import { Switch } from "./ui/switch";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { CartDetails } from "./CartDetails";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const NavBar = () => {
   const router = useRouter();
@@ -58,7 +59,7 @@ const NavBar = () => {
           </Button>
 
           <Button variant="secondary" size="lg">
-            Login
+            <ConnectButton />
           </Button>
         </div>
       </div>
