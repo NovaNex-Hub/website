@@ -58,7 +58,9 @@ const NavBar = () => {
           </Button>
           
           <Button variant="secondary" size="lg">
-            Login
+            <Link href="/login">
+              Login
+            </Link>
           </Button>
           
         </div>
