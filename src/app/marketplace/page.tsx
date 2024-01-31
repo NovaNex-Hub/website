@@ -45,7 +45,7 @@ export default function Marketplace() {
           </div>
         ))}
       </div>
-      <div className="font-semibold m-6 text-xl">Top Sales</div>
+      {/* <div className="font-semibold m-6 text-xl">Top Sales</div> */}
       <div className="font-semibold m-6 text-xl">Best Offers</div>
       <div className="grid grid-cols-4 gap-4">
         {images.map((path, index) => (

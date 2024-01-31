@@ -1,31 +1,33 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Image from "next/image";
+import { AutoPlayCards } from "@/components/AutoPlayCards";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <MaxWidthWrapper>
-      <div className="font-semibold text-2xl">
-        Get Started
+      <div className="h-[30px]"></div>
+      <AutoPlayCards />
+      
+      <div className="w-full flex justify-evenly items-center pt-[60px]">
+        <Link href="/docs">
+        <div className="w-[350px] h-[200px] rounded-lg border border-white text-xl font-semibold grid items-center text-center transition-all cursor-pointer hover:mb-3" style={{transition:".2s"}}>
+          Docs
+        </div>
+        </Link>
+        <Link href="/login">
+        <div className="w-[350px] h-[200px] rounded-lg border border-white text-xl font-semibold grid items-center text-center transition-all cursor-pointer hover:mb-3" style={{transition:".2s"}}>
+          Get Started
+        </div>
+        </Link>
+        <Link href="/marketplace">
+        <div className="w-[350px] h-[200px] rounded-lg border border-white text-xl font-semibold grid items-center text-center transition-all cursor-pointer hover:mb-3" style={{transition:".2s"}}>
+          Marketplace
+        </div>
+        </Link>
       </div>
-      <div className="bg-black grid-cols-4 gap-4 md:flex md:flex-row mt-20 mx-8">
-        <Image src="/nft7.jpg" width={500} height={400} alt="nft7" />
 
-        <Image src="/nft8.jpg" width={500} height={400} alt="nft8" />
-
-        <Image src="/nft9.jpg" width={500} height={400} alt="nft9" />
-      </div>
-      <div className="bg-black grid-cols-4 gap-4 md:flex md:flex-row mt-20 mx-8">
-        <Image src="/nft10.jpg" width={500} height={400} alt="nft10" />
-
-        <Image src="/nft11.jpg" width={500} height={400} alt="nft11" />
-
-        <Image src="/nft12.jpg" width={500} height={400} alt="nft12" />
-      </div>
-      <div
-        className="px-[30px] md:px-[100px] py-[60px]
-    bg-black grid grid-cols-1 md:flex md:flex-row gap-4"
-      >
+      <div className="w-full">
+      <div>
         <div className="md:flex flex-wrap md:flex-row justify-between w-full">
           <div className="md:flex justify-center items-start md:gap-[100px]">
             <div className="flex flex-row gap-[100px]">
@@ -83,6 +85,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </MaxWidthWrapper>
   );
