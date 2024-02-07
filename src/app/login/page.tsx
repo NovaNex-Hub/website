@@ -1,4 +1,5 @@
 "use client";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export default function Login() {
   return (
@@ -11,8 +12,8 @@ export default function Login() {
             </div>
 
             <button type='submit' className='w-1/2 px-8 py-2 mb-2 font-semibold rounded-lg text-[#fff] bg-[#315f31] mt-3'>Log in</button>
-            <div>
-              <button type='submit' className='w-1/2 px-8 py-2 mb-2 font-semibold rounded-lg text-[#fff] bg-[#315f31] mt-2'>Connect Wallet</button>
+            <div className='mx-40'>
+              <ConnectButton/>
             </div>
           </form>
         </div>
