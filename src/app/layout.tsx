@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Providers } from "./providers";
-import { Footer } from "@/components/Footer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +34,7 @@ export default function RootLayout({
             <main className="relative flex flex-col min-h-screen w-screen">
               <NavBar />
               <div className="flex-grow flex-1">{children}</div>
-              <Footer />
+              
             </main>
           </ThemeProvider>
         </Providers>

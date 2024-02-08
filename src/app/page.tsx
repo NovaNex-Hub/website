@@ -4,7 +4,7 @@ import { AutoPlayCards } from "@/components/AutoPlayCards";
 import Link from "next/link";
 
 export default function Home() {  
-  redirect("/marketplace")
+  
   return (
     <MaxWidthWrapper>
       <div className="h-[30px]"></div>

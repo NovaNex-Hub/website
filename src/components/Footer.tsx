@@ -1,3 +1,6 @@
+
+
+
 export const Footer = () => {
   return (
     <div className="grid grid-cols-5 m-6">
