@@ -5,7 +5,7 @@ import {
   RainbowKitProvider,
   getDefaultWallets,
   connectorsForWallets,
-  darkTheme
+  darkTheme,
 } from "@rainbow-me/rainbowkit";
 import {
   argentWallet,
@@ -14,23 +14,24 @@ import {
 } from "@rainbow-me/rainbowkit/wallets";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
-import {polygonMumbai} from "wagmi/chains";
+import { polygonMumbai } from "wagmi/chains";
+import { mainnet, polygon, optimism, arbitrum, base, zora } from "wagmi/chains";
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [polygonMumbai,],
+  [polygonMumbai],
   [publicProvider()],
 );
 
 const projectId = "YOUR_PROJECT_ID";
 
 const { wallets } = getDefaultWallets({
-  appName: "novanex",
-  projectId: "b56c8edc72698645ad436dc73c5e6d03",
-  chains,
+  appName: "NovaNex",
+  projectId: "f3d85d07261ebee604c0fd8273d35663",
+  chains: [mainnet, polygon, optimism, arbitrum, base, zora],
 });
 
 const demoAppInfo = {
-  appName: "novanex",
+  appName: "NovaNex",
 };
 
 const connectors = connectorsForWallets([
@@ -57,10 +58,13 @@ export function Providers({ children }: { children: React.ReactNode }) {
   React.useEffect(() => setMounted(true), []);
   return (
     <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains} appInfo={demoAppInfo}
-      theme={darkTheme({
-        accentColor: 'rgb(255,255,255)'
-      })}>
+      <RainbowKitProvider
+        chains={chains}
+        appInfo={demoAppInfo}
+        theme={darkTheme({
+          accentColor: "rgb(255,255,255)",
+        })}
+      >
         {mounted && children}
       </RainbowKitProvider>
     </WagmiConfig>

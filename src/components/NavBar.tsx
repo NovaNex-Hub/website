@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Separator } from "./ui/separator";
-import { ShoppingCart, UserRound } from "lucide-react";
+import { UserRound } from "lucide-react";
 import { Switch } from "./ui/switch";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { CartDetails } from "./CartDetails";
@@ -12,7 +12,7 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 const NavBar = () => {
   const router = useRouter();
   return (
-    <div className="border-b">
+    <div className="border-b sticky top-0 bg-black">
       <div className="flex h-20 items-center justify-between mx-10">
         <div className="flex items-center h-full">
           <Link className="font-bold text-3xl mr-10" href="/">
