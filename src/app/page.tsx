@@ -9,7 +9,7 @@ export default function Home() {
       <div className="h-[30px]"></div>
       <AutoPlayCards />
 
-      <div className="w-full flex justify-evenly items-center pt-[60px]">
+      {/* <div className="w-full flex flex-col lg:flex-row lg:justify-evenly items-center pt-[60px] gap-4">
         <Link href="/docs">
           <div
             className="w-[350px] h-[200px] rounded-lg border border-white text-xl font-semibold grid items-center text-center transition-all cursor-pointer hover:mb-3"
@@ -34,7 +34,7 @@ export default function Home() {
             Marketplace
           </div>
         </Link>
-      </div>
+      </div> */}
     </MaxWidthWrapper>
   );
 }
